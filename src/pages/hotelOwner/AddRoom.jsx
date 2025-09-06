@@ -33,7 +33,7 @@ const AddRoom = () => {
             <div className='grid grid-cols-2 sm:flex gap-4 my-2 flex-wrap'>
                 {Object.keys(images).map((key)=>(
                     <label htmlFor={`roomImages${key}`} key={key}>
-                        <img className='max-h-52 cursor-pointer opacity-80'
+                        <img className='max-h-13 cursor-pointer opacity-80'
                          src={images[key] ? URL.createObjectURL(images[key]) : assets.uploadArea} alt="" />
                          <input type="file" accept='image/*' id={`roomImages${key}`} hidden 
                          onChange={e=> setImages({...images, [key]: e.target.files[0]})}/>
@@ -69,7 +69,7 @@ const AddRoom = () => {
             <div className='flex flex-col flex-wrap mt-1 text-gray-400 max-w-sm'>
                 {Object.keys(inputs.amenities).map((amenity, index)=>(
                     <div key={index}>
-                        <input type="checkbox" id={`amenities${index+1}`} checked={inputs.amenities[amenity]} onChange={()=>setInputs({...inputs,
+                        <input type="checkbox" id={`amenities${index+1}`} checked={inputs.amenities[amenity]} onChange={()=>setInputs({...inputes,
                             amenities: {...inputs.amenities, [amenity]: !inputs.amenities[amenity]}
                         })} />
                         
