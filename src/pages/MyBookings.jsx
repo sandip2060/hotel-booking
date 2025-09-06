@@ -5,7 +5,7 @@ import {assets, userBookingsDummyData} from '../assets/assets'
 const MyBookings = () => {
 
 
-    const [bookings, setBookings] = useState(userBookingsDummyData)
+    const [bookings, setBooking] = useState(userBookingsDummyData)
 
 
   return (
@@ -41,7 +41,7 @@ const MyBookings = () => {
                             <span>Guests: {booking.guests}</span>
 
                             </div>
-                            <p className='text-base'>Total: ${booking.totalPrice}</p>
+                            <p className='text-base'>Total: Nrp:{booking.totalPrice}</p>
                         </div>
                     </div>
 
