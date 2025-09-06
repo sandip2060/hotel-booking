@@ -101,7 +101,7 @@ const Navbar = () => {
                          onClick={()=> navigate('/my-bookings')} />
                     </UserButton.MenuItems>
                 </UserButton>}
-                    <img src={assets.menuIcon} alt="menu-icon" className={`${isScrolled && "invert"} h-4`} />
+                    <img src={assets.menuIcon} alt="menu-icon" className={`${isScrolled && "invert"} h-4`}  onClick={() => setIsMenuOpen(true)} style={{cursor:'pointer'}} />
                 </div>
 
                 {/* Mobile Menu */}
